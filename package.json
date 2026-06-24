@@ -1,5 +1,9 @@
 {
   "name": "personal-portfolio",
+  "author": {
+    "name": "Tan-Nhi",
+    "email": "nguyentannhi2003bh@gmail.com"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
