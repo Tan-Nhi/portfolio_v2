@@ -1,11 +1,11 @@
 'use client'
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
-import { JSX } from "react/jsx-runtime";
+import { ReactNode } from "react";
 
 interface Props {
     title: string;
     amount: number;
-    children: JSX.Element;
+    children: ReactNode;
 }
 
 const Achievements = (props: Props) => {
@@ -18,17 +18,17 @@ const Achievements = (props: Props) => {
     };
 
     return (
-        <div className="flex items-end gap-x-3">
-            <span className="text-4xl lg:text-2xl text-gray-300">{children}</span>
-            <h1 className="flex flex-col gap-y-2">
-                <span className="text-2xl lg:text-xl font-light text-yellow-500 flex">
-                    <motion.span onViewportEnter={count} viewport={{ once: true }}>
-                        {rounded}
-                    </motion.span>
-                    +
-                </span>
-                <span className="text-sm tracking-wide text-gray-500">{title}</span>
-            </h1>
+        <div className="flex flex-col gap-y-2">
+            <span className="text-2xl lg:text-xl font-light text-amber-500">
+                <motion.span onViewportEnter={count} viewport={{ once: true }}>
+                    {rounded}
+                </motion.span>
+            </span>
+
+            <div className="flex items-center gap-x-2 text-gray-500 dark:text-white transition-colors">
+                <span className="text-lg">{children}</span>
+                <span className="text-sm tracking-wide">{title}</span>
+            </div>
         </div>
     );
 };

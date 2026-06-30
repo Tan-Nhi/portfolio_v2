@@ -1,8 +1,65 @@
 @import "tailwindcss";
 
+/* Port of darkMode: 'class' from tailwind.config.js (v3) */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --breakpoint-xl: 1440px;
-  --breakpoint-lg: 1150px;
-  --breakpoint-md: 767px;
-  --breakpoint-sm: 639px;
+  --breakpoint-sm: initial;
+  --breakpoint-md: initial;
+  --breakpoint-lg: initial;
+  --breakpoint-xl: initial;
+}
+
+/*
+  Port of custom max-width "screens" from tailwind.config.js (v3):
+  xl: { max: '1400px' }
+  lg: { max: '1150px' }
+  md: { max: '767px' }
+  sm: { max: '639px' }
+  xs: { max: '393px' }
+
+  Tailwind v4's @theme --breakpoint-* only generates min-width variants,
+  so max-width breakpoints must be redefined manually with @custom-variant.
+  This OVERRIDES the default xl/lg/md/sm breakpoint variants, so existing
+  classes like `lg:hidden`, `sm:w-full` etc. keep working exactly like in v3
+  (no need to rename them to max-lg:, max-sm:, etc.)
+*/
+@custom-variant xl {
+  @media (max-width: 1400px) {
+    @slot;
+  }
+}
+
+@custom-variant lg {
+  @media (max-width: 1150px) {
+    @slot;
+  }
+}
+
+@custom-variant md {
+  @media (max-width: 767px) {
+    @slot;
+  }
+}
+
+@custom-variant sm {
+  @media (max-width: 639px) {
+    @slot;
+  }
+}
+
+@custom-variant xs {
+  @media (max-width: 393px) {
+    @slot;
+  }
+}
+
+/* Port of theme.extend.backgroundImage from tailwind.config.js (v3) */
+@theme {
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+}
+
+html {
+  scroll-behavior: smooth !important;
 }

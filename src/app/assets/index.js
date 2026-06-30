@@ -59,51 +59,57 @@ I enjoy solving real-world problems through clean, scalable, and user-focused so
 // Experience
 export const experienceData = [
     {
-        year: 1,
-        title: 'Foundation and Basics',
+        year: '2021 - 2022',
+        title: 'Programming Foundation',
         education:
-            'High School Diploma: Focus on computer science, mathematics, and art/design courses.',
+            'Started Software Application Development at FPT Polytechnic College.',
         experience: [
-            'Basic HTML/CSS: Learn through online tutorials and courses.',
-            'Personal Projects: Create simple personal websites or blogs.',
+            'Built strong foundation in programming, OOP, database, and algorithms.',
+            'Learned HTML, CSS, JavaScript, Java Core, and SQL fundamentals.',
         ],
     },
     {
-        year: 2,
-        title: 'Advanced Learning and Early Experience',
+        year: '2023',
+        title: 'Frontend Development Journey',
         education:
-            'Associate’s Degree in Web Development or Design: Enroll in a 2-year program covering web development and design principles.',
+            'Focused on modern frontend technologies and UI/UX practices.',
         experience: [
-            'Freelance Work: Take on small freelance projects to build a portfolio.',
-            'Online Courses and Certifications: Learn JavaScript, responsive design, and UX/UI design.',
+            'Learned ReactJS, TypeScript, responsive design, and component-based architecture.',
+            'Built personal and academic projects to strengthen frontend skills.',
         ],
     },
     {
-        year: 3,
-        title: 'Specialized Education and Real-World Application',
+        year: '2024',
+        title: 'Real-World Development Experience',
         education:
-            'Online Courses and Bootcamps: Focus on specialized areas like front-end frameworks (React, Angular) and back-end technologies (Node.js).',
+            'Applied academic knowledge in enterprise development environments.',
         experience: [
-            'Internships: Secure internships with tech companies or design agencies.',
-            'Contribute to Open Source: Collaborate on open-source projects.',
+            'Interned at VNPT Soc Trang as Frontend Developer Intern.',
+            'Developed frontend modules and integrated REST APIs.',
+            'Worked with AngularJS, Spring Boot, SQL Server, and RBAC systems.',
         ],
     },
     {
-        year: 4,
-        title: 'Building Expertise and Expanding Skills',
-        education: 'Certifications: Obtain certifications in advanced web technologies.',
+        year: '2025',
+        title: 'Fullstack Project Development',
+        education:
+            'Started Information Technology degree at Can Tho University.',
         experience: [
-            'Full-Time Position: Work as a junior web developer or designer.',
-            'Portfolio Development: Continuously update your portfolio with professional and personal projects.',
+            'Built a fullstack bookstore e-commerce platform.',
+            'Developed frontend with ReactJS + TypeScript.',
+            'Implemented backend APIs with ExpressJS and MongoDB.',
+            'Integrated VNPay payment gateway and business workflows.',
         ],
     },
     {
-        year: 5,
-        title: 'Mastery and Leadership',
-        education: 'Workshops and Conferences: Attend industry events to stay updated.',
+        year: '2026 - Future',
+        title: 'Fullstack Engineer Career Path',
+        education:
+            'Continuously improving scalable system design and backend architecture.',
         experience: [
-            'Senior Position: Aim for a senior web developer or lead designer role, mentoring junior colleagues.',
-            'Freelance and Consulting: Consider starting a freelance business or consulting practice.',
+            'Interned at CCVI Technology with ReactJS, NextJS, TypeScript, and automation workflows.',
+            'Target career path: Fullstack Java Developer (Spring Boot) or Fullstack JavaScript Developer (NodeJS/NestJS).',
+            'Focusing on building scalable, production-ready fullstack applications.',
         ],
     },
 ]
@@ -268,7 +274,7 @@ export const projectsData = [
         name: 'GreenLeafGardens.biz',
         desc: 'An online store and community hub for gardening enthusiasts, featuring a wide range of plants, gardening tools, and expert advice.',
         url: '/projects/image-6.jpg',
-        tech: ['ReactJS', 'TailwindCSS', , 'CSS', 'FramerMotion'],
+        tech: ['ReactJS', 'TailwindCSS', 'CSS', 'FramerMotion'],
     },
     {
         name: 'PixelPerfectDesigns.info',

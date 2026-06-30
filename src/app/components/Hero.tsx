@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { heroIcons } from "@/app/assets";
-import { number, useMotionValue, useTransform, motion, useSpring, scale } from "framer-motion";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 
 const HeroPage = () => {

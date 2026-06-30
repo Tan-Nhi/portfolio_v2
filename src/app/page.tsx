@@ -1,4 +1,5 @@
 import AboutPage from "./components/About";
+import ExperiencePage from "./components/Experience";
 import HeroPage from "./components/Hero";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <HeroPage />
       <AboutPage />
+      <ExperiencePage />
     </>
   );
 }
