@@ -1,6 +1,8 @@
+'use client';
 import AboutPage from "./components/About";
 import ExperiencePage from "./components/Experience";
 import HeroPage from "./components/Hero";
+import SkillPage from "./components/Skills";
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
       <HeroPage />
       <AboutPage />
       <ExperiencePage />
+      <SkillPage />
     </>
   );
 }

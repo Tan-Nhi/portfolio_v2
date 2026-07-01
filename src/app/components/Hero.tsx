@@ -54,12 +54,12 @@ const HeroPage = () => {
                                 transition: '0.1s'
                             }}>
                             <Image
-                                src={"/person.png"}
+                                src={"/tannhi.png"}
                                 alt="Person Image"
                                 width={400}
                                 height={400}
                                 priority={true}
-                                className="h-auto w-[150px]"
+                                className="h-auto w-[350px]"
                             />
                             <motion.span className="absolute text-3xl font-semibold text-white" initial={{ scale: 0 }}
                                 animate={{
@@ -82,8 +82,9 @@ const HeroPage = () => {
                     <div className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl">
                         {heroIcons.map((icon, i) => (
                             <a
-                                href="#"
+                                href="https://github.com/Tan-Nhi"
                                 key={i}
+                                target="_blank"
                                 className="hover:bg-red-400 hover:text-white transition-colors rounded-lg  "
                             >
                                 {icon}

@@ -116,79 +116,36 @@ export const experienceData = [
 
 // Skills
 export const skillsData = [
-    {
-        name: 'Figma',
-        icon: '/skills/figma.png',
-    },
-    {
-        name: 'Photoshop',
-        icon: '/skills/photoshop.png',
-    },
-    {
-        name: 'Blender',
-        icon: '/skills/blender.png',
-    },
-    {
-        name: 'VS Code',
-        icon: '/skills/vscode.png',
-    },
-    {
-        name: 'HTML',
-        icon: '/skills/html.png',
-    },
-    {
-        name: 'CSS',
-        icon: '/skills/css.png',
-    },
-    {
-        name: 'JavaScript',
-        icon: '/skills/js.png',
-    },
-    {
-        name: 'TailwindCSS',
-        icon: '/skills/tailwind.png',
-    },
-    {
-        name: 'Vite',
-        icon: '/skills/vite.png',
-    },
-    {
-        name: 'ReactJS',
-        icon: '/skills/react.png',
-    },
-    {
-        name: 'TypeScript',
-        icon: '/skills/ts.png',
-    },
-    {
-        name: 'AI',
-        icon: '/skills/ai.png',
-    },
-    {
-        name: 'Framer Motion',
-        icon: '/skills/framer.png',
-    },
-    {
-        name: 'ThreeJS',
-        icon: '/skills/threejs.png',
-    },
-    {
-        name: 'NextJS',
-        icon: '/skills/nextjs.png',
-    },
-    {
-        name: 'NodeJS',
-        icon: '/skills/nodejs.png',
-    },
-    {
-        name: 'MongoDB',
-        icon: '/skills/mongodb.png',
-    },
-    {
-        name: 'Github',
-        icon: '/skills/github.png',
-    },
-]
+    { name: 'HTML', icon: '/skills/html.png' },
+    { name: 'CSS', icon: '/skills/css.png' },
+    { name: 'JavaScript', icon: '/skills/js.png' },
+    { name: 'TypeScript', icon: '/skills/ts.png' },
+    { name: 'ReactJS', icon: '/skills/react.png' },
+    { name: 'NextJS', icon: '/skills/nextjs.png' },
+    { name: 'TailwindCSS', icon: '/skills/tailwind.png' },
+    { name: 'MUI', icon: '/skills/mui.svg' },
+    { name: 'Bootstrap', icon: '/skills/bootstrap.svg' },
+    { name: 'Framer Motion', icon: '/skills/framer.png' },
+    { name: 'Vite', icon: '/skills/vite.png' },
+
+    { name: 'NodeJS', icon: '/skills/nodejs.png' },
+    { name: 'Java', icon: '/skills/java.svg' },
+    { name: 'ExpressJS', icon: '/skills/express.svg' },
+
+    { name: 'NestJS', icon: '/skills/nestjs.svg' },
+    { name: 'Spring Boot', icon: '/skills/spring.svg' },
+
+    { name: 'MongoDB', icon: '/skills/mongodb.png' },
+    { name: 'MySQL', icon: '/skills/mysql.svg' },
+    { name: 'PostgreSQL', icon: '/skills/postgresql.svg' },
+
+    { name: 'Figma', icon: '/skills/figma.png' },
+    { name: 'Photoshop', icon: '/skills/photoshop.png' },
+    { name: 'Docker', icon: '/skills/docker.svg' },
+    { name: 'VS Code', icon: '/skills/vscode.png' },
+    { name: 'GitHub', icon: '/skills/github.png' },
+    { name: 'Postman', icon: '/skills/postman.svg' },
+];
 
 // Reviews
 import StarFillIcon from 'remixicon-react/StarFillIcon'
