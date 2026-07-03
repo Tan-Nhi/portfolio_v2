@@ -1,9 +1,9 @@
 'use client';
 
-import Image from "next/image";
-import Heading from "./subs/Heading";
-import { skillsData } from "../assets";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { skillsData } from "../assets";
+import Heading from "./subs/Heading";
 
 const SkillPage = () => {
 

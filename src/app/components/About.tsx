@@ -12,7 +12,7 @@ const AboutPage = () => {
 
             <div className="w-full flex flex-row items-center gap-x-10 md:flex-col md:items-center md:gap-y-8 justify-center">
                 <Image
-                    src={'/about-me.png'}
+                    src={'/tannhi-About.png'}
                     alt="About Image"
                     width={400}
                     height={400}

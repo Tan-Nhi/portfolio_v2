@@ -24,7 +24,7 @@ const ExperiencePage = () => {
             <div className="min-h-screen flex flex-col items-center justify-center px-4 md:px-10">
                 <Heading text={'Experience & Education'} />
                 <Image
-                    src={'/education.png'}
+                    src={'/tannhi-education.png'}
                     alt={'Experience Image'}
                     width={400}
                     height={400}

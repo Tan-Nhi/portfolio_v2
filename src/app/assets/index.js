@@ -131,7 +131,6 @@ export const skillsData = [
     { name: 'NodeJS', icon: '/skills/nodejs.png' },
     { name: 'Java', icon: '/skills/java.svg' },
     { name: 'ExpressJS', icon: '/skills/express.svg' },
-
     { name: 'NestJS', icon: '/skills/nestjs.svg' },
     { name: 'Spring Boot', icon: '/skills/spring.svg' },
 
@@ -147,130 +146,36 @@ export const skillsData = [
     { name: 'Postman', icon: '/skills/postman.svg' },
 ];
 
-// Reviews
-import StarFillIcon from 'remixicon-react/StarFillIcon'
-import StarHalfLineIcon from 'remixicon-react/StarHalfLineIcon'
-import ArrowLeftSLineIcon from 'remixicon-react/ArrowLeftSLineIcon'
-import ArrowRightSLineIcon from 'remixicon-react/ArrowRightSLineIcon'
-
-/* eslint-disable react/jsx-key */
-export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />]
-export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />]
-
-export const reviewsData = [
-    {
-        image: '/reviews/client-4.png',
-        name: 'Mark T., Freelance Graphic Designer',
-        comment:
-            "Your work on our website has been phenomenal. The design is visually stunning and incredibly user-friendly. We've received countless compliments from our customers, and our sales have noticeably increased. Thank you for capturing our brand's essence so perfectly!",
-        stars: [1, 1, 1, 1, 0.5],
-    },
-    {
-        image: '/reviews/client-2.png',
-        name: 'Sarah B., E-commerce Store Owner',
-        comment:
-            "Working with you, has been an absolute pleasure. The portfolio website you created for me is sleek, modern, and beautifully showcases my work. Your attention to detail and creative flair are truly impressive. I couldn't be happier with the final result!",
-        stars: [1, 1, 1, 1, 1],
-    },
-    {
-        image: '/reviews/client-3.png',
-        name: 'Emily R., CEO of Tech Startup',
-        comment:
-            "The redesign of our corporate website exceeded all expectations. Your innovative ideas and professional execution have given us a site that is not only visually appealing but also highly functional. We've seen a significant improvement in user engagement thanks to your expertise.",
-        stars: [1, 1, 1, 1, 1],
-    },
-    {
-        image: '/reviews/client-1.png',
-        name: 'Bob W., Lifestyle Blogger',
-        comment:
-            "I absolutely love the blog design you created for me, [Web Designer's Name]. It's exactly what I envisioned—stylish, unique, and easy to navigate. Your responsiveness and creative input were invaluable. My readers are raving about the new look, and I couldn't be more thrilled!",
-        stars: [1, 1, 1, 1, 0.5],
-    },
-    {
-        image: '/reviews/client-5.png',
-        name: 'David H., Director of Non-Profit Organization',
-        comment:
-            "your work on our non-profit’s website has been transformative. The design is clean, engaging, and effectively conveys our mission. We've seen an increase in online donations and volunteer sign-ups, all thanks to your fantastic design. Your dedication and talent are greatly appreciated!",
-        stars: [1, 1, 1, 1, 1],
-    },
-]
-
 // Projects
 export const projectsData = [
     {
-        name: 'SparkleGrove.com',
-        desc: 'A lifestyle blog featuring DIY crafts, home decor ideas, and inspiration for creating a cozy and stylish living space.',
-        url: '/projects/image-1.jpg',
-        tech: ['Figma', 'Photoshop', 'HTML'],
+        name: 'Bookstore Management Website',
+        desc: 'Built a full-stack e-commerce platform with product, order, and user management. Implemented shopping cart functionality, REST API integration, and VNPay payment gateway.',
+        image: '/projects/image-1.jpg',
+        tech: ['ReactJS', 'TypeScript', 'ExpressJS', 'MongoDB', 'Fullstack', 'UI/UX'],
+        github: 'https://github.com/Tan-Nhi/bookstore-web',
+        demo: 'https://bookstore-web-rouge.vercel.app',
     },
     {
-        name: 'TechTrekker.net',
-        desc: 'A technology news and review site covering the latest gadgets, software updates, and trends in the tech industry.',
-        url: '/projects/image-2.jpg',
-        tech: ['Figma', 'Photoshop'],
-    },
-    {
-        name: 'CozyNestHomes.org',
-        desc: 'A resource for homeowners and renters alike, offering tips on interior design, home improvement projects, and sustainable living practices.',
-        url: '/projects/image-3.jpg',
-        tech: ['HTML', 'CSS', 'JavaScript'],
-    },
-    {
-        name: 'WanderLuxeTravels.co',
-        desc: 'A travel website that provides luxury travel guides, destination reviews, and tips for planning unforgettable vacations.',
-        url: '/projects/image-4.jpg',
-        tech: ['HTML', 'CSS', 'JavaScript', 'TailwindCSS'],
-    },
-    {
-        name: 'ByteBoosters.io',
-        desc: 'A tech startup specializing in software development, offering innovative solutions and services for businesses looking to enhance their digital presence.',
-        url: '/projects/image-5.jpg',
-        tech: ['Figma', 'ReactJS', 'TailwindCSS', 'CSS'],
-    },
-    {
-        name: 'GreenLeafGardens.biz',
-        desc: 'An online store and community hub for gardening enthusiasts, featuring a wide range of plants, gardening tools, and expert advice.',
-        url: '/projects/image-6.jpg',
-        tech: ['ReactJS', 'TailwindCSS', 'CSS', 'FramerMotion'],
-    },
-    {
-        name: 'PixelPerfectDesigns.info',
-        desc: 'A graphic design portfolio showcasing the work of a freelance designer, including branding, web design, and illustration projects.',
-        url: '/projects/image-7.jpg',
-        tech: ['NextJS', 'FramerMotion'],
-    },
-    {
-        name: 'HarmonyHealthHub.com',
-        desc: ' A wellness website focused on holistic health, offering articles on nutrition, fitness, mental health, and alternative therapies.',
-        url: '/projects/image-8.jpg',
-        tech: ['NextJS', 'ReactJS', 'FramerMotion'],
-    },
-    {
-        name: 'StellarSkiesAstronomy.org',
-        desc: 'An educational site dedicated to astronomy, providing resources for amateur astronomers, star maps, and information on celestial events.',
-        url: '/projects/image-9.jpg',
-        tech: ['ReactJS', 'JavaScript', 'ThreeJS'],
-    },
-    {
-        name: 'UrbanEatsDelights.com',
-        desc: 'An educational site dedicated to astronomy, providing resources for amateur astronomers, star maps, and information on celestial events.',
-        url: '/projects/image-10.jpg',
-        tech: ['NextJS', 'ThreeJS'],
+        name: 'Personal Portfolio Website',
+        desc: 'Designed and developed a responsive portfolio website to showcase projects, technical skills, and professional experience with modern UI and smooth animations.',
+        image: '/projects/image-2.jpg',
+        tech: ['NextJS', 'TypeScript', 'TailwindCSS', 'Framer Motion', 'Frontend', 'UI/UX'],
+        github: 'https://github.com/Tan-Nhi/portfolio_v2',
+        demo: 'https://portfolio-tannhi.xyz',
     },
 ]
 
 export const projectsButton = [
     'All',
-    'Figma',
-    'Photoshop',
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'ReactJS',
-    'TailwindCSS',
-    'NextJS',
-    'FramerMotion',
-    'ThreeJS',
+    'Frontend',
+    "ReactJS",
+    "NextJS",
+    'Fullstack',
+    'Backend',
+    "NestJS",
+    "Java Spring",
+    'UI/UX',
 ]
 
 // Pricing Plans

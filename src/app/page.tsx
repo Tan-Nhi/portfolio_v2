@@ -2,6 +2,7 @@
 import AboutPage from "./components/About";
 import ExperiencePage from "./components/Experience";
 import HeroPage from "./components/Hero";
+import ProjectsPage from "./components/Projects";
 import SkillPage from "./components/Skills";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <AboutPage />
       <ExperiencePage />
       <SkillPage />
+      <ProjectsPage />
     </>
   );
 }
