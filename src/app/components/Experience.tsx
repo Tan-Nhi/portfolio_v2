@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { useRef } from 'react'
-import Heading from './subs/Heading'
 import { arrowLeftIcon, experienceData } from '../assets'
+import Heading from './subs/Heading'
 
 const ExperiencePage = () => {
     const date = new Date().getFullYear()
@@ -20,7 +20,7 @@ const ExperiencePage = () => {
     const scrollY = useSpring(scrollYProgress, { stiffness: 200, damping: 20 })
     return (
 
-        <div id="experience" className="relative py-20">
+        <div id="experience" className="relative px-70">
             <div className="min-h-screen flex flex-col items-center justify-center px-4 md:px-10">
                 <Heading text={'Experience & Education'} />
                 <Image

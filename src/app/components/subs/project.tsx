@@ -34,7 +34,7 @@ const Project = (props: Props) => {
                 alt="Project Image"
                 width={400}
                 height={400}
-                className="rounded-lg opacity-70"
+                className="rounded-lg opacity-70 w-full"
             />
             <motion.div
                 initial={{ opacity: 0 }}

@@ -5,6 +5,11 @@ import DribbbleLineIcon from 'remixicon-react/DribbbleLineIcon'
 import YoutubeLineIcon from 'remixicon-react/YoutubeLineIcon'
 import GithubLineIcon from 'remixicon-react/GithubLineIcon'
 
+import StarFillIcon from 'remixicon-react/StarFillIcon'
+import StarHalfLineIcon from 'remixicon-react/StarHalfLineIcon'
+import ArrowLeftSLineIcon from 'remixicon-react/ArrowLeftSLineIcon'
+import ArrowRightSLineIcon from 'remixicon-react/ArrowRightSLineIcon'
+
 /* eslint-disable react/jsx-key */
 export const heroIcons = [
     <InstagramLineIcon />,
@@ -177,6 +182,36 @@ export const projectsButton = [
     "Java Spring",
     'UI/UX',
 ]
+
+//Reviews 
+export const reviewsData = [
+    {
+        avatar: 'MH',
+        name: 'Đinh Minh Hoành',
+        role: "Internship Mentor",
+        comment: "Tan Nhi consistently demonstrated responsibility and professionalism throughout the internship. He completed assigned tasks on schedule, maintained clear communication, and showed a strong commitment to delivering quality work.",
+        stars: [1, 1, 1, 1, 1],
+    },
+    {
+        avatar: 'DN',
+        name: 'Nguyễn Đình Ngọc',
+        role: 'Lecturer',
+        comment:
+            "Tan Nhi is a highly self-motivated student with a strong commitment to continuous learning. Throughout the capstone project, he consistently took the initiative to explore new technologies and successfully delivered the assigned tasks.",
+        stars: [1, 1, 1, 1, 1],
+    },
+    {
+        avatar: 'TB',
+        name: 'Tạ Thiên Bảo',
+        role: 'Software Developer',
+        comment:
+            "Tan Nhi is a reliable teammate with strong problem-solving skills. He communicates effectively, adapts quickly to new technologies, and consistently contributes to the success of the team.",
+        stars: [1, 1, 1, 1, 1],
+    }
+]
+
+export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />]
+export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />]
 
 // Pricing Plans
 export const pricingPlans = [

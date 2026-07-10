@@ -18,7 +18,7 @@ const SkillPage = () => {
         hidden: { opacity: 0, y: 30 },
     }
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center gap-y-20 px-96">
+        <div className="min-h-screen flex flex-col items-center justify-center gap-y-20 px-80">
             <Heading text={"Skills"} />
             <div className="w-full max-w-7xl grid grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
                 {skillsData.map((item, i) => (
