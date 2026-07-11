@@ -187,14 +187,14 @@ export const projectsButton = [
 export const reviewsData = [
     {
         avatar: 'MH',
-        name: 'Đinh Minh Hoành',
+        name: 'Dinh Minh Hoanh',
         role: "Internship Mentor",
         comment: "Tan Nhi consistently demonstrated responsibility and professionalism throughout the internship. He completed assigned tasks on schedule, maintained clear communication, and showed a strong commitment to delivering quality work.",
         stars: [1, 1, 1, 1, 1],
     },
     {
         avatar: 'DN',
-        name: 'Nguyễn Đình Ngọc',
+        name: 'Nguyen Dinh Ngoc',
         role: 'Lecturer',
         comment:
             "Tan Nhi is a highly self-motivated student with a strong commitment to continuous learning. Throughout the capstone project, he consistently took the initiative to explore new technologies and successfully delivered the assigned tasks.",
@@ -202,7 +202,7 @@ export const reviewsData = [
     },
     {
         avatar: 'TB',
-        name: 'Tạ Thiên Bảo',
+        name: 'Ta Thien Bao',
         role: 'Software Developer',
         comment:
             "Tan Nhi is a reliable teammate with strong problem-solving skills. He communicates effectively, adapts quickly to new technologies, and consistently contributes to the success of the team.",
