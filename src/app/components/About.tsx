@@ -7,7 +7,8 @@ import Heading from "./subs/Heading";
 
 const AboutPage = () => {
     return <>
-        <div className="min-h-screen flex flex-col items-center justify-center px-70 md:px-10 ">
+        <div id='about'
+            className="min-h-screen flex flex-col items-center justify-center px-70 md:px-10 ">
             <Heading text={'About Me'} />
 
             <div className="w-full flex flex-row items-center gap-x-10 md:flex-col md:items-center md:gap-y-8 justify-center">

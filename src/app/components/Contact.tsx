@@ -6,7 +6,8 @@ import { motion } from 'framer-motion'
 
 const ContactPage = () => {
     return (
-        <div className="h-screen py-20 px-80">
+        <div id="contact"
+            className="h-screen py-20 px-80">
             <Heading text={"Get in touch"} />
             <div className="w-full h-full my-auto flex lg:flex-col items-center justify-center lg:justify-center gap-x-20 lg:gap-x-0 gap-y-20">
                 <motion.div

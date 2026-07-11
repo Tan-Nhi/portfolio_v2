@@ -39,7 +39,7 @@ const HeroPage = () => {
 
     return (
         <>
-            <div
+            <div id='home'
                 className="h-screen grid place-items-center"
                 onMouseMove={handleMouseMove}
                 onMouseEnter={handleMoveEnter}

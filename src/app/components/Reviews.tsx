@@ -24,7 +24,8 @@ const ReviewsPage = () => {
     const review = reviewsData[index]
 
     return (
-        <div className="my-20 px-80">
+        <div id='reviews'
+            className="my-20 px-80">
             <Heading text="Reviews" />
 
             <div className="flex flex-col items-center justify-center px-5">
@@ -62,7 +63,7 @@ const ReviewsPage = () => {
                                 justify-center
                             "
                         >
-                            {/* Avatar */}
+
                             <div
                                 className="flex h-20 w-20 items-center justify-center rounded-full border border-yellow-400 bg-white
                                 text-2xl font-semibold text-zinc-700"
@@ -70,17 +71,16 @@ const ReviewsPage = () => {
                                 {review.avatar}
                             </div>
 
-                            {/* Name */}
+
                             <h2 className="text-center text-2xl font-semibold tracking-normal text-yellow-600">
                                 {review.name}
                             </h2>
 
-                            {/* Role */}
                             <p className="text-center text-sm tracking-wide text-zinc-500">
                                 {review.role}
                             </p>
 
-                            {/* Stars */}
+
                             <div className="flex gap-1 text-2xl text-yellow-500">
                                 {review.stars.map((star, i) => (
                                     <span key={i}>
@@ -91,7 +91,7 @@ const ReviewsPage = () => {
                                 ))}
                             </div>
 
-                            {/* Comment */}
+
                             <blockquote
                                 className="
                                     max-w-3xl
@@ -108,7 +108,7 @@ const ReviewsPage = () => {
                     </AnimatePresence>
                 </div>
 
-                {/* Controls */}
+
                 <div className="mt-8 flex items-center gap-6 text-3xl text-yellow-500">
                     <button
                         onClick={prevReview}

@@ -29,6 +29,7 @@ const ExperiencePage = () => {
                     width={400}
                     height={400}
                     className="absolute -top-4 right-96 opacity-70 lg:hidden"
+                    priority
                 />
                 <div
                     ref={containerRef}

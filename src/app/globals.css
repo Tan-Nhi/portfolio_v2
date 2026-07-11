@@ -10,20 +10,9 @@
   --breakpoint-xl: initial;
 }
 
-/*
-  Port of custom max-width "screens" from tailwind.config.js (v3):
-  xl: { max: '1400px' }
-  lg: { max: '1150px' }
-  md: { max: '767px' }
-  sm: { max: '639px' }
-  xs: { max: '393px' }
-
-  Tailwind v4's @theme --breakpoint-* only generates min-width variants,
-  so max-width breakpoints must be redefined manually with @custom-variant.
-  This OVERRIDES the default xl/lg/md/sm breakpoint variants, so existing
-  classes like `lg:hidden`, `sm:w-full` etc. keep working exactly like in v3
-  (no need to rename them to max-lg:, max-sm:, etc.)
-*/
+html {
+scroll-behavior: smooth !important;
+}
 @custom-variant xl {
   @media (max-width: 1400px) {
     @slot;
