@@ -28,7 +28,7 @@ const AboutPage = () => {
                     alt="About Image"
                     width={400}
                     height={400}
-                    className="w-[160px] shrink-0 sm:w-[200px] md:w-[220px] rounded-xl"
+                    className="w-[160px] shrink-0 rounded-xl md:hidden"
                     priority
                 />
                 <div className="relative flex-1 max-w-[900px] rounded-xl bg-zinc-100 p-8 text-justify dark:bg-zinc-700 transition-colors">
@@ -47,7 +47,8 @@ const AboutPage = () => {
                     </a>
                 </div>
             </div>
-            <div className="mt-20 w-full flex flex-wrap items-center justify-around gap-x-7 gap-y-10 ">
+
+            <div className="mt-20 w-full max-w-[900px] mx-auto grid grid-cols-4 gap-x-7 gap-y-10 justify-items-center md:grid-cols-1 md:gap-y-8">
                 {stats.map((item, i) => (
                     <Achievements key={i} title={item.title} amount={item.amount}>
                         {item.icon}

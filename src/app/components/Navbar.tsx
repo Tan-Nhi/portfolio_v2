@@ -15,7 +15,9 @@ const Navbar = ({ id }: Props) => {
     const t = translations[language];
 
     return (
-        <nav className="w-[70px] h-screen fixed left-0 top-0 flex flex-col items-center justify-between border-r border-gray-200 dark:border-zinc-700 px-4 py-10 z-10 bg-zinc-50 dark:bg-zinc-800 transition-colors">
+        <nav className="w-[70px] min-h-dvh fixed left-0 top-0 flex flex-col items-center
+         justify-between border-r border-gray-200 dark:border-zinc-700 px-4 py-10 z-10
+          bg-zinc-50 dark:bg-zinc-800 transition-colors xl:py-6">
             <Link href="/#home" className="flex flex-col items-center shrink-0">
                 <span className="text-3xl font-semibold text-red-400 leading-none whitespace-nowrap">
                     T.
@@ -25,7 +27,7 @@ const Navbar = ({ id }: Props) => {
                 </span>
             </Link>
 
-            <div className="flex flex-col gap-y-4 cursor-pointer">
+            <div className="flex flex-col gap-y-4 sm:gap-y-2 xl:gap-y-1 cursor-pointer">
                 {navbarData.map((item, i) => (
                     <Link
                         key={i}
@@ -33,9 +35,9 @@ const Navbar = ({ id }: Props) => {
                         className="group relative flex items-center justify-center"
                     >
                         <span
-                            className={`text-2xl mb-4 transition-all duration-300 group-hover:scale-125 ${item.id === id
-                                ? "text-red-500 scale-110"
-                                : "text-yellow-600 scale-100"
+                            className={`text-2xl mb-4 transition-all duration-300 group-hover:scale-125 xs:group-hover:scale-100 xl:group-hover:scale-115 ${item.id === id
+                                ? "text-red-500 scale-110 xl:scale-100 xs:scale-80"
+                                : "text-yellow-600 scale-100 xl:scale-90 xs:scale-70"
                                 }`}
                         >
                             {item.icon}
@@ -59,7 +61,7 @@ const Navbar = ({ id }: Props) => {
                     <span className="text-[13px] text-gray-500 dark:text-gray-200">
                         {copyRightIcon}
                     </span>
-                    <span className="text-[15px] text-gray-500 dark:text-gray-200 tracking-wider ">
+                    <span className="text-[15px] xs:text-[12px] text-gray-500 dark:text-gray-200 tracking-wider ">
                         2021 - {new Date().getFullYear()}
                     </span>
                 </div>

@@ -28,6 +28,7 @@ const Loading = () => {
                 alt="Loading Gif"
                 height={100}
                 width={100}
+                priority
             />
         </motion.div>
     );

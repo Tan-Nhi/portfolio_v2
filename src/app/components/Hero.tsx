@@ -41,7 +41,7 @@ const HeroPage = () => {
     return (
         <>
             <div id='home'
-                className="h-screen grid place-items-center"
+                className="min-h-dvh grid place-items-center pt-0 -mt-10 sm:mt-0"
                 onMouseMove={handleMouseMove}
                 onMouseEnter={handleMoveEnter}
             >

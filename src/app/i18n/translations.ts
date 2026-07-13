@@ -26,7 +26,7 @@ I enjoy solving real-world problems through clean, scalable, and user-focused so
         { title: "GitHub Repositories" },
         { title: "Fullstack Projects" },
         { title: "Core Technologies" },
-        { title: "Years Learning Programming" },
+        { title: "Years Learning Tech" },
       ],
     },
     experience: {
@@ -86,15 +86,7 @@ I enjoy solving real-world problems through clean, scalable, and user-focused so
     skills: { heading: "Skills" },
     projects: {
       heading: "Projects",
-      filters: [
-        "All",
-        "Frontend",
-        "Fullstack",
-        "Backend",
-        "NestJS",
-        "Java Spring",
-        "UI/UX",
-      ],
+      filters: ["All", "Frontend", "Fullstack", "Backend", "UI/UX"],
       items: [
         {
           name: "Bookstore Management Website",
@@ -222,15 +214,7 @@ Mình thích giải quyết các bài toán thực tế bằng những giải ph
     skills: { heading: "Kỹ năng" },
     projects: {
       heading: "Dự án",
-      filters: [
-        "Tất cả",
-        "Frontend",
-        "Fullstack",
-        "Backend",
-        "NestJS",
-        "Java Spring",
-        "UI/UX",
-      ],
+      filters: ["Tất cả", "Frontend", "Fullstack", "Backend", "UI/UX"],
       items: [
         {
           name: "Website Quản lý Nhà sách",

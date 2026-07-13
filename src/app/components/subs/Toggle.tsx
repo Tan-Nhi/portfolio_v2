@@ -35,7 +35,7 @@ const Toggle = ({ children }: Props) => {
                             onClick={() => (darkTheme ? removeDarkTheme() : addDarkTheme())}
                             className="flex items-center justify-center h-9 w-9 rounded-full bg-white dark:bg-zinc-700
                         border border-yellow-500/40 text-yellow-600 hover:bg-yellow-500 hover:text-white
-                        transition-colors shadow-sm text-xl"
+                        transition-colors shadow-sm text-xl z-40"
                         >
                             {mounted ? (darkTheme ? sunIcon : moonIcon) : null}
                         </button>

@@ -29,7 +29,7 @@ const ExperiencePage = () => {
     const scrollY = useSpring(scrollYProgress, { stiffness: 200, damping: 20 })
     return (
 
-        <div id="experience" className="relative">
+        <div id="experience" className="relative md:mt-10">
             <div className="min-h-screen flex flex-col items-center justify-center px-4 md:px-10">
                 <Heading text={t.experience.heading} />
                 <Image
@@ -57,7 +57,8 @@ const ExperiencePage = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.7, type: 'spring', stiffness: 50 }}
-                                className="relative flex flex-col gap-y-3 rounded-md border border-red-300 bg-white p-4 tracking-wide sm:text-sm dark:bg-zinc-700 transition-colors z-20"
+                                className="relative flex flex-col gap-y-3 rounded-md border border-red-300
+                                 bg-white p-4 tracking-wide sm:text-sm dark:bg-zinc-700 transition-colors z-20"
                             >
                                 <h1 className="text-xl sm:text-lg font-light text-gray-700 dark:text-white">
                                     {data.title}
@@ -77,7 +78,7 @@ const ExperiencePage = () => {
                                     </ul>
                                 </div>
                                 <span
-                                    className={`absolute top-20 text-red-300 -translate-y-1/2 lg:hidden ${i % 2 === 0 ? 'left-full rotate-180' : 'right-full'
+                                    className={`absolute top-20 text-red-300 -translate-y-1/2 lg:hidden lg:hidden ${i % 2 === 0 ? 'left-full rotate-180' : 'right-full'
                                         }`}
                                 >
                                     {arrowLeftIcon}

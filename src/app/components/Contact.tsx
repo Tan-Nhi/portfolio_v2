@@ -13,7 +13,7 @@ const ContactPage = () => {
 
     return (
         <div id="contact"
-            className="h-screen py-20">
+            className="h-screen py-20 lg:h-auto lg:py-40 sm:mt-0 ">
             <Heading text={t.contact.heading} />
             <div className="w-full h-full my-auto flex lg:flex-col items-center justify-center lg:justify-center gap-x-20 lg:gap-x-0 gap-y-20">
                 <motion.div
@@ -21,7 +21,7 @@ const ContactPage = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4 }}
                     viewport={{ once: true }}
-                    className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] shrink-0 rounded-md overflow-hidden opacity-80"
+                    className="relative w-[280px] h-[250px] sm:w-[300px] sm:h-[270px] shrink-0 rounded-md overflow-hidden opacity-80 object-cover"
                 >
                     <Image
                         src={"/contact.gif"}
@@ -29,7 +29,7 @@ const ContactPage = () => {
                         fill
                         sizes="320px"
                         priority
-                        className="object-cover"
+                        className="object-cover rounded-md opacity-80"
                     />
                 </motion.div>
                 <motion.form
