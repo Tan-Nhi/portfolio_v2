@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "./context/LanguageContext";
 
-const outfit = Outfit({
-  subsets: ["latin"],
-});
 
 
 export const metadata: Metadata = {
@@ -22,8 +19,11 @@ export default function RootLayout({
     <html
       lang="en"
     >
-      <body className={outfit.className} >
-        {children}
+      <body >
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
+
       </body>
     </html>
   );

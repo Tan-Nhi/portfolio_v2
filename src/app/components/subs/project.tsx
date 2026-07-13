@@ -28,7 +28,7 @@ const Project = (props: Props) => {
             transition={{ duration: 1, type: "spring", stiffness: 100 }}
             initial={{ opacity: 0, y: index % 2 === 0 ? 100 : -100 }}
             onClick={() => setShow((show) => !show)}
-            className="relative w[350px] sm:w-full h-max border border-yellow-400 rounded-lg cursor-pointer">
+            className="relative w-[350px] sm:w-full h-max border border-yellow-400 rounded-lg cursor-pointer overflow-hidden">
             <Image
                 src={data.image}
                 alt="Project Image"
@@ -39,13 +39,33 @@ const Project = (props: Props) => {
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: show ? 1 : 0 }}
-                className="absolute top-0 w-full h-full flex flex-col items-center justify-center
-                         gap-y-2 bg-white/95 p-6 rounded-lg "
+                className="absolute inset-0 flex flex-col items-center justify-center
+                         gap-y-1.5 bg-white/95 p-4 rounded-lg dark:bg-zinc-700/95 transition-colors overflow-y-auto"
             >
-                <h2 className="text-lg font-bold tracking-wide text-gray-500 ">{data.name}</h2>
-                <p className="text-justify text-gray-500 first-letter:pl-2">{data.desc}</p>
-                <a href={data.demo} target="_blank" rel="noopener noreferrer" className="text-sm">Demo: {data.demo}</a>
-                <a href={data.github} target="_blank" rel="noopener noreferrer" className="text-sm">GitHub: {data.github}</a>
+                <h2 className="text-base font-bold tracking-wide text-gray-500 dark:text-white transition-colors text-center">
+                    {data.name}
+                </h2>
+                <p className="text-justify text-xs leading-snug text-gray-500 line-clamp-5 dark:text-gray-100 transition-colors">
+                    {data.desc}
+                </p>
+                <a
+                    href={data.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="text-xs truncate max-w-full text-blue-500 hover:underline dark:text-blue-300 transition-colors"
+                >
+                    Demo: {new URL(data.demo).hostname}
+                </a>
+                <a
+                    href={data.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="text-xs truncate max-w-full text-blue-500 hover:underline dark:text-blue-300 transition-colors"
+                >
+                    GitHub: {data.github.replace('https://github.com/', '')}
+                </a>
             </motion.div>
         </motion.div>
     )

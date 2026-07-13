@@ -5,10 +5,19 @@ import Image from 'next/image'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { useRef } from 'react'
 import { arrowLeftIcon, experienceData } from '../assets'
+import { useLanguage } from '../context/LanguageContext'
 import Heading from './subs/Heading'
+import { translations } from '../i18n/translations'
 
 const ExperiencePage = () => {
     const date = new Date().getFullYear()
+    const { language } = useLanguage();
+    const t = translations[language];
+
+    const items = experienceData.map((d, i) => ({
+        year: d.year,
+        ...t.experience.items[i],
+    }));
 
     const containerRef = useRef(null)
 
@@ -20,22 +29,22 @@ const ExperiencePage = () => {
     const scrollY = useSpring(scrollYProgress, { stiffness: 200, damping: 20 })
     return (
 
-        <div id="experience" className="relative px-70">
+        <div id="experience" className="relative">
             <div className="min-h-screen flex flex-col items-center justify-center px-4 md:px-10">
-                <Heading text={'Experience & Education'} />
+                <Heading text={t.experience.heading} />
                 <Image
                     src={'/tannhi-education.png'}
                     alt={'Experience Image'}
                     width={400}
                     height={400}
-                    className="absolute -top-4 right-96 opacity-70 lg:hidden"
+                    className="absolute -top-4 right-0 opacity-70 lg:hidden rounded-xl"
                     priority
                 />
                 <div
                     ref={containerRef}
                     className="relative w-full h-full flex flex-col items-center justify-center gap-y-10 lg:gap-y-20 py-10"
                 >
-                    {experienceData.map((data, i) => (
+                    {items.map((data, i) => (
                         <div
                             key={`id-${i}`}
                             className={`w-[600px] xl:w-[480px] sm:w-full px-12 sm:px-0 relative -left-[300px] ${i % 2 === 0
@@ -80,7 +89,7 @@ const ExperiencePage = () => {
                                     : 'right-full translate-x-1/2 lg:right-1/2'
                                     }`}
                             >
-                                {date - experienceData.length + i + 1}
+                                {date - items.length + i + 1}
                             </div>
                         </div>
                     ))}

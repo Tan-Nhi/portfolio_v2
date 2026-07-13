@@ -4,8 +4,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { skillsData } from "../assets";
 import Heading from "./subs/Heading";
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../i18n/translations";
 
 const SkillPage = () => {
+
+    const { language } = useLanguage();
+    const t = translations[language];
 
     const variants = {
         visible: (i: number) => ({
@@ -19,8 +24,8 @@ const SkillPage = () => {
     }
     return (
         <div id="skills"
-            className="min-h-screen flex flex-col items-center justify-center gap-y-20 px-80">
-            <Heading text={"Skills"} />
+            className="min-h-screen flex flex-col items-center justify-center gap-y-20 px-20">
+            <Heading text={t.skills.heading} />
             <div className="w-full max-w-7xl grid grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
                 {skillsData.map((item, i) => (
                     <motion.div
@@ -42,6 +47,7 @@ const SkillPage = () => {
                             className="h-auto w-[32px] shrink-0"
                         />
                         <p className="text-sm text-gray-600 whitespace-nowrap">{item.name}</p>
+
                     </motion.div>
                 ))}
             </div>

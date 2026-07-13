@@ -4,29 +4,42 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
 
 import { arrowIcons, reviewsData, starIcons } from '../assets'
+import { useLanguage } from '../context/LanguageContext'
 import Heading from './subs/Heading'
+import { translations } from '../i18n/translations'
 
 const ReviewsPage = () => {
+    const { language } = useLanguage();
+    const t = translations[language];
+
+    const items = reviewsData.map((r, i) => ({
+        avatar: r.avatar,
+        name: r.name,
+        stars: r.stars,
+        role: t.reviews.items[i].role,
+        comment: t.reviews.items[i].comment,
+    }));
+
     const [index, setIndex] = useState(0)
 
     const prevReview = () => {
         setIndex((prev) =>
-            prev === 0 ? reviewsData.length - 1 : prev - 1
+            prev === 0 ? items.length - 1 : prev - 1
         )
     }
 
     const nextReview = () => {
         setIndex((prev) =>
-            prev === reviewsData.length - 1 ? 0 : prev + 1
+            prev === items.length - 1 ? 0 : prev + 1
         )
     }
 
-    const review = reviewsData[index]
+    const review = items[index]
 
     return (
         <div id='reviews'
-            className="my-20 px-80">
-            <Heading text="Reviews" />
+            className="my-20 ">
+            <Heading text={t.reviews.heading} />
 
             <div className="flex flex-col items-center justify-center px-5">
                 <div className="w-full max-w-4xl overflow-hidden">

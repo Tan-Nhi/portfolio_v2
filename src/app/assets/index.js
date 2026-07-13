@@ -45,7 +45,7 @@ export const aboutData = [
     },
     {
         title: 'Years Self-Taught',
-        amount: 2,
+        amount: 5,
         icon: <AwardFillIcon />,
     },
 ];
@@ -174,8 +174,6 @@ export const projectsData = [
 export const projectsButton = [
     'All',
     'Frontend',
-    "ReactJS",
-    "NextJS",
     'Fullstack',
     'Backend',
     "NestJS",

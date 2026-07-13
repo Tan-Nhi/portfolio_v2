@@ -10,9 +10,7 @@
   --breakpoint-xl: initial;
 }
 
-html {
-scroll-behavior: smooth !important;
-}
+
 @custom-variant xl {
   @media (max-width: 1400px) {
     @slot;
@@ -51,4 +49,8 @@ scroll-behavior: smooth !important;
 
 html {
   scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
 }

@@ -1,11 +1,17 @@
 "use client";
 
 import { heroIcons } from "@/app/assets";
+import { useLanguage } from "@/app/context/LanguageContext";
+
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { translations } from "../i18n/translations";
 
 const HeroPage = () => {
+    const { language } = useLanguage();
+    const t = translations[language];
+
     const [windowOffset, setWindowOffset] = useState({
         innerWidth: 0,
         innerHeight: 0,
@@ -19,15 +25,11 @@ const HeroPage = () => {
         const { clientX, clientY } = e;
         x.set(clientX);
         y.set(clientY);
-
-
     };
 
     const handleMoveEnter = () => {
         setWindowOffset({ innerWidth: window.innerWidth, innerHeight: window.innerHeight });
         setMoveMove(true);
-
-
     }
 
     const { innerWidth, innerHeight } = windowOffset;
@@ -59,7 +61,7 @@ const HeroPage = () => {
                                 width={400}
                                 height={400}
                                 priority={true}
-                                className="h-auto w-[350px]"
+                                className="h-auto w-[350px] rounded-xl"
                             />
                             <motion.span className="absolute text-3xl font-semibold text-white" initial={{ scale: 0 }}
                                 animate={{
@@ -72,11 +74,11 @@ const HeroPage = () => {
                                 Hi
                             </motion.span>
                         </motion.div>
-                        <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl">
-                            My Name is Nguyen Tan Nhi &
+                        <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl dark:text-white transition-colors">
+                            {t.hero.greeting}
                         </h1>
-                        <p className="text-lg tracking-wider text-gray-700">
-                            I like adventure🏍️
+                        <p className="text-lg tracking-wider text-gray-700 dark:text-gray-200">
+                            {t.hero.tagline}
                         </p>
                     </div>
                     <div className="mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl">
@@ -97,9 +99,9 @@ const HeroPage = () => {
                         onMouseEnter={() => setButtonHover(true)}
                         onMouseLeave={() => setButtonHover(false)}
                     >
-                        Talk to me
+                        {t.hero.cta}
                     </a>
-                </div>
+                </div >
             </div >
         </>
     );
