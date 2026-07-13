@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "./context/LanguageContext";
 
-
-
 export const metadata: Metadata = {
   title: "Nguyen Tan Nhi | Fullstack Web Developer",
   description:

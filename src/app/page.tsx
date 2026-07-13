@@ -9,6 +9,7 @@ import ProjectsPage from "./components/Projects";
 import ReviewsPage from "./components/Reviews";
 import SkillPage from "./components/Skills";
 import Toggle from "./components/subs/Toggle";
+import Loading from "./components/subs/Load";
 
 export default function Home() {
   const [id, setId] = useState<number | string>(0);
@@ -41,6 +42,7 @@ export default function Home() {
   }, []);
   return (
     <>
+      <Loading />
       <Toggle >
         <Navbar id={id} />
         <div className="w-full" ref={compsRef}>
