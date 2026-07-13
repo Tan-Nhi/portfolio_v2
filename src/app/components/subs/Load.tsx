@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Loading = () => {
     const [load, setLoad] = useState<boolean>(false);
@@ -21,7 +22,13 @@ const Loading = () => {
             transition={{ duration: 0.5 }}
             className="w-full h-full fixed left-0 top-0 flex items-center justify-center bg-gradient-to-t from-yellow-50 to-red-50 z-50"
         >
-            <img src="/spinner.gif" alt="Loading Gif" />
+            <Image
+                className="mix-blend-multiply"
+                src={"/motorcycle.gif"}
+                alt="Loading Gif"
+                height={100}
+                width={100}
+            />
         </motion.div>
     );
 };
