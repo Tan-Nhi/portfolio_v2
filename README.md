@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Nguyen Tan Nhi | Portfolio
 
-## Getting Started
+Portfolio cá nhân giới thiệu bản thân, kỹ năng, kinh nghiệm và các dự án của **Nguyễn Tấn Nhi** — Fullstack Web Developer. Giao diện hiện đại, responsive, hỗ trợ song ngữ (VI/EN) với hiệu ứng chuyển động mượt mà.
 
-First, run the development server:
+🔗 **Live Demo:** [portfolio-tannhi.xyz](https://www.portfolio-tannhi.xyz/)
+
+---
+
+## 📸 Giới thiệu
+
+Đây là trang portfolio thế hệ mới (v2), được xây dựng lại với Next.js 16 và Tailwind CSS 4, tập trung vào hiệu năng, SEO và trải nghiệm người dùng.
+
+## 🛠️ Công nghệ sử dụng
+
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animation:** [Framer Motion](https://www.framer.com/motion/)
+- **Ngôn ngữ:** TypeScript
+- **Triển khai:** Vercel
+
+## ✨ Tính năng
+
+- 🌐 Hỗ trợ đa ngôn ngữ (Tiếng Việt / English)
+- 🎬 Hiệu ứng chuyển động mượt mà với Framer Motion
+- 📱 Thiết kế responsive, tối ưu cho mọi thiết bị
+- 🖼️ Tối ưu hình ảnh với Next/Image
+- ⚡ Tối ưu hiệu năng và SEO chuẩn Next.js App Router
+
+## 📄 Cấu trúc các trang
+
+| Trang                  | Mô tả                                                               |
+| ---------------------- | --------------------------------------------------------------------- |
+| **Trang chủ**   | Giới thiệu tổng quan, ảnh đại diện, liên kết mạng xã hội  |
+| **Giới thiệu** | Thông tin cá nhân, định hướng nghề nghiệp, tải CV           |
+| **Hành trình** | Timeline kinh nghiệm & học vấn theo từng mốc thời gian          |
+| **Kỹ năng**    | Danh sách công nghệ, ngôn ngữ lập trình, công cụ sử dụng   |
+| **Dự án**      | Danh sách project fullstack/frontend/backend kèm demo & source code |
+| **Đánh giá**  | Nhận xét từ đồng nghiệp/người hướng dẫn                    |
+| **Liên hệ**    | Form liên hệ / thông tin liên lạc                                |
+
+## 📦 Cài đặt
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone repository
+git clone https://github.com/Tan-Nhi/portfolio_v2.git
+cd portfolio_v2
+
+# Cài đặt dependencies
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Chạy dự án
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Chạy môi trường development
+npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Build production
+npm run build
 
-## Learn More
+# Chạy production
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+Sau khi chạy `npm run dev`, mở [http://localhost:3000](http://localhost:3000) để xem trên trình duyệt.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Cấu trúc thư mục
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+personal-portfolio/
+├── public/                      # Ảnh, icon kỹ năng, favicon...
+├── src/
+│   └── app/
+│       ├── assets/
+│       │   ├── hooks/           # Custom React hooks
+│       │   └── index.js
+│       ├── components/
+│       │   ├── subs/            # Component con, tái sử dụng nội bộ
+│       │   │   ├── Achievements.tsx
+│       │   │   ├── Heading.tsx
+│       │   │   ├── LanguageToggle.tsx
+│       │   │   ├── Load.tsx
+│       │   │   ├── project.tsx
+│       │   │   └── Toggle.tsx
+│       │   ├── About.tsx        # Section: Giới thiệu
+│       │   ├── Contact.tsx      # Section: Liên hệ
+│       │   ├── Experience.tsx   # Section: Kinh nghiệm & Học vấn
+│       │   ├── Hero.tsx         # Section: Trang chủ
+│       │   ├── Navbar.tsx       # Thanh điều hướng
+│       │   ├── Projects.tsx     # Section: Dự án
+│       │   ├── Reviews.tsx      # Section: Đánh giá
+│       │   └── Skills.tsx       # Section: Kỹ năng
+│       ├── context/
+│       │   └── LanguageContext.tsx   # Context quản lý ngôn ngữ VI/EN
+│       ├── i18n/
+│       │   └── translations.ts       # Nội dung song ngữ
+│       ├── favicon.ico
+│       ├── globals.css
+│       ├── layout.tsx
+│       └── page.tsx
+├── .gitignore
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+└── package.json
+```
 
-## Deploy on Vercel
+## 🌍 Triển khai
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Dự án được triển khai trên **Vercel**. Mỗi lần push lên nhánh `main`, Vercel sẽ tự động build và deploy phiên bản mới.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📬 Liên hệ
+
+- **GitHub:** [@Tan-Nhi](https://github.com/Tan-Nhi)
+- **Website:** [portfolio-tannhi.xyz](https://www.portfolio-tannhi.xyz/)
+- **Email:**  nguyentannhi2003bh@gmail.com
