@@ -108,7 +108,7 @@ personal-portfolio/
 
 ## 🌍 Triển khai
 
-Dự án được triển khai trên **Vercel**. Mỗi lần push lên nhánh `main`, Vercel sẽ tự động build và deploy phiên bản mới.
+Dự án được triển khai trên **Vercel**. Mỗi lần push lên nhánh `master`, Vercel sẽ tự động build và deploy phiên bản mới.
 
 ## 📬 Liên hệ
 

@@ -90,11 +90,11 @@ I enjoy solving real-world problems through clean, scalable, and user-focused so
       items: [
         {
           name: "Bookstore Management Website",
-          desc: "Built a full-stack e-commerce platform with product, order, and user management. Implemented shopping cart functionality, REST API integration, and VNPay payment gateway.",
+          desc: "Fullstack e-commerce site for online book sales — product, order and user management with cart, REST API, and VNPay payment integration.",
         },
         {
           name: "Personal Portfolio Website",
-          desc: "Designed and developed a responsive portfolio website to showcase projects, technical skills, and professional experience with modern UI and smooth animations.",
+          desc: "Personal portfolio built with Next.js and TypeScript, featuring animated project cards, dark mode, and multi-language support.",
         },
       ],
     },
@@ -218,11 +218,11 @@ Mình thích giải quyết các bài toán thực tế bằng những giải ph
       items: [
         {
           name: "Website Quản lý Nhà sách",
-          desc: "Xây dựng nền tảng thương mại điện tử fullstack với quản lý sản phẩm, đơn hàng và người dùng. Tích hợp giỏ hàng, REST API và cổng thanh toán VNPay.",
+          desc: "Trang thương mại điện tử fullstack bán sách online — quản lý sản phẩm, đơn hàng, giỏ hàng, tích hợp REST API và thanh toán qua VNPay.",
         },
         {
           name: "Website Portfolio cá nhân",
-          desc: "Thiết kế và phát triển website portfolio responsive để giới thiệu dự án, kỹ năng kỹ thuật và kinh nghiệm chuyên môn với giao diện hiện đại và hiệu ứng mượt mà.",
+          desc: "Portfolio cá nhân xây dựng bằng Next.js và TypeScript, có card dự án hiệu ứng động, chế độ tối và hỗ trợ đa ngôn ngữ.",
         },
       ],
     },

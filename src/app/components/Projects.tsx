@@ -34,16 +34,13 @@ const ProjectsPage = () => {
         prevIndex.current = index;
     }, [index]);
 
-    // Lưu ý: filter logic vẫn dùng "tech" gốc tiếng Anh trong projectsData,
-    // nên khi language = vi, nhãn nút hiển thị tiếng Việt nhưng so sánh dùng index thay vì text
     const filterKeys = ['All', 'Frontend', 'Fullstack', 'Backend', 'NestJS', 'Java Spring', 'UI/UX'];
     const activeFilterKey = filterKeys[index];
 
     return (
-        <div id="projects"
-            className="min-h-screen py-20">
+        <div id="projects" className="min-h-screen py-20">
             <Heading text={t.projects.heading} />
-            <div className="flex flex-wrap items-center justify-center gap-4 py-10 ">
+            <div className="flex flex-wrap items-center justify-center gap-4 py-10">
                 {t.projects.filters.map((text, i) => (
                     <motion.button
                         key={i}
@@ -59,16 +56,19 @@ const ProjectsPage = () => {
                     </motion.button>
                 ))}
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-5 ">
+            <div
+                style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fill, minmax(280px, 350px))",
+                    justifyContent: "center",
+                    gap: "1.5rem",
+                    padding: "0 1rem",
+                }}
+            >
                 {items
-                    .filter((project) => {
-                        return project.tech.some((item) => (activeFilterKey === 'All' ? true : item === activeFilterKey))
-                    })
+                    .filter((project) => project.tech.some((item) => (activeFilterKey === 'All' ? true : item === activeFilterKey)))
                     .map((data, i) => (
-                        <motion.div
-                            className="" key={`id-${i}`}
-                            layout
-                        >
+                        <motion.div key={`id-${i}`} layout>
                             <Project data={data} index={i} />
                         </motion.div>
                     ))}

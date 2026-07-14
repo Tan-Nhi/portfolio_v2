@@ -41,6 +41,16 @@
   }
 }
 
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 /* Port of theme.extend.backgroundImage from tailwind.config.js (v3) */
 @theme {
   --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
