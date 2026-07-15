@@ -60,7 +60,7 @@ const Project = (props: Props) => {
         >
             <Image
                 src={data.image}
-                alt="Project Image"
+                alt={`Ảnh chụp màn hình dự án ${data.name}`}
                 width={400}
                 height={400}
                 className="rounded-lg opacity-70 w-full"

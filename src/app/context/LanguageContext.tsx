@@ -25,11 +25,11 @@ function subscribe(callback: () => void) {
 
 function getSnapshot(): Language {
     const saved = window.localStorage.getItem(STORAGE_KEY);
-    return saved === 'en' || saved === 'vi' ? saved : 'vi';
+    return saved === 'en' || saved === 'vi' ? saved : 'en';
 }
 
 function getServerSnapshot(): Language {
-    return 'vi';
+    return 'en';
 }
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
@@ -53,3 +53,4 @@ export const useLanguage = () => {
     if (!ctx) throw new Error('useLanguage must be used within LanguageProvider');
     return ctx;
 };
+

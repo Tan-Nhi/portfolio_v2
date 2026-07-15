@@ -17,6 +17,9 @@ const Loading = () => {
 
     return (
         <motion.div
+            role="status"
+            aria-live="polite"
+            aria-label="Đang tải trang"
             initial={{ top: 0 }}
             animate={{ top: load ? '-100%' : 0 }}
             transition={{ duration: 0.5 }}
