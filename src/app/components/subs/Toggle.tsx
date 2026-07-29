@@ -29,7 +29,10 @@ const Toggle = ({ children }: Props) => {
         <main ref={mainRef}>
             <div className="bg-zinc-50 dark:bg-zinc-800">
                 <div className="max-w-[1200px] sm:pl-[80px] sm:pr-5 xl:w-full mx-auto flex justify-center xl:px-[90px] overflow-hidden">
-                    <div className="fixed right-14 sm:right-10 top-10 flex items-center gap-3 z-20">
+                    <div
+                        className="fixed right-14 top-10 z-20 flex items-center gap-3
+                        md:top-0 md:h-14 md:right-16 md:z-40 md:gap-2"
+                    >
                         <LanguageToggle />
                         <button
                             onClick={() => (darkTheme ? removeDarkTheme() : addDarkTheme())}

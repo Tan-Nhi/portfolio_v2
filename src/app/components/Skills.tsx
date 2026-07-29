@@ -24,7 +24,7 @@ const SkillPage = () => {
     }
     return (
         <div id="skills"
-            className="min-h-screen flex flex-col items-center justify-center gap-y-10 sm:gap-y-14 md:gap-y-20 px-15 sm:px-8 md:px-4 lg:px-20">
+            className="min-h-screen flex flex-col items-center justify-center gap-y-10 md:gap-y-14 lg:gap-y-20 px-4 min-[767px]:px-8 min-[1150px]:px-15 min-[1400px]:px-20">
             <Heading text={t.skills.heading} />
 
             <div className="@container w-full max-w-7xl">

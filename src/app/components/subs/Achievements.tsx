@@ -18,16 +18,16 @@ const Achievements = (props: Props) => {
     };
 
     return (
-        <div className="flex flex-col gap-y-2">
+        <div className="flex flex-col items-center gap-y-2 text-center">
             <span className="text-2xl lg:text-xl font-light text-amber-500">
                 <motion.span onViewportEnter={count} viewport={{ once: true }}>
                     {rounded}
                 </motion.span>
             </span>
 
-            <div className="flex items-center gap-x-2 text-gray-500 dark:text-white transition-colors">
+            <div className="flex items-center justify-center gap-x-2 text-gray-500 dark:text-white transition-colors">
                 <span className="text-lg">{children}</span>
-                <span className="text-sm tracking-wide">{title}</span>
+                <span className="text-sm tracking-wide whitespace-nowrap">{title}</span>
             </div>
         </div>
     );

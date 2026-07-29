@@ -40,44 +40,50 @@ const HeroPage = () => {
 
     return (
         <>
-            <div id='home'
-                className="min-h-dvh grid place-items-center pt-0 -mt-10 sm:mt-0"
+            <div
+                id="home"
+                className="min-h-dvh w-full flex flex-col items-center justify-center px-4
+    md:h-[calc(100dvh-3.5rem)] md:min-h-0"
                 onMouseMove={handleMouseMove}
                 onMouseEnter={handleMoveEnter}
             >
-                <div className="">
+                <div className="w-full max-w-md mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: -100 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.8 }}
-                        className="flex flex-col items-center justify-center gap-y-3 font-light capitalize"
+                        className="flex flex-col items-center justify-center gap-y-3 font-light capitalize text-center"
                     >
                         <motion.div
-                            className="flex items-center justify-center"
+                            className="relative flex items-center justify-center"
                             style={{
                                 rotateX: mouseMove ? rotateX : 0,
                                 rotateY: mouseMove ? rotateY : 0,
-                                transition: '0.1s'
-                            }}>
+                                transition: "0.1s",
+                            }}
+                        >
                             <Image
                                 src={"/tannhi.png"}
                                 alt="Person Image"
                                 width={400}
                                 height={400}
                                 priority={true}
-                                className="h-auto w-[350px] rounded-xl"
+                                className="h-auto w-[350px] max-w-full rounded-xl"
                             />
-                            <motion.span className="absolute text-3xl font-semibold text-white" initial={{ scale: 0 }}
+                            <motion.span
+                                className="absolute text-3xl font-semibold text-white"
+                                initial={{ scale: 0 }}
                                 animate={{
                                     opacity: buttonHover ? 0 : 1,
                                     scale: buttonHover ? 2 : 0,
-                                    y: buttonHover ? -40 : 0
+                                    y: buttonHover ? -40 : 0,
                                 }}
                                 transition={{ opacity: { delay: 0.4 } }}
                             >
                                 Hi
                             </motion.span>
                         </motion.div>
+
                         <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl dark:text-white transition-colors">
                             {t.hero.greeting}
                         </h1>
@@ -85,6 +91,7 @@ const HeroPage = () => {
                             {t.hero.tagline}
                         </p>
                     </motion.div>
+
                     <motion.div
                         initial={{ opacity: 0, y: 100 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -96,24 +103,25 @@ const HeroPage = () => {
                                 href="https://github.com/Tan-Nhi"
                                 key={i}
                                 target="_blank"
-                                className="hover:bg-red-400 hover:text-white transition-colors rounded-lg  "
+                                className="hover:bg-red-400 hover:text-white transition-colors rounded-lg"
                             >
                                 {icon}
                             </a>
                         ))}
                     </motion.div>
+
                     <motion.a
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 1 }}
                         href="#"
-                        className="mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light  capitalize tracking-wider text-white hover:bg-red-500 transition-colors"
+                        className="mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize tracking-wider text-white hover:bg-red-500 transition-colors"
                         onMouseEnter={() => setButtonHover(true)}
                         onMouseLeave={() => setButtonHover(false)}
                     >
                         {t.hero.cta}
                     </motion.a>
-                </div >
+                </div>
             </div >
         </>
     );
