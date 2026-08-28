@@ -28,7 +28,7 @@ const SkillPage = () => {
             <Heading text={t.skills.heading} />
 
             <div className="@container w-full max-w-7xl">
-                <div className="grid grid-cols-2 @md:grid-cols-3 @2xl:grid-cols-4 @5xl:grid-cols-5 @5xl:w-fit @5xl:mx-auto gap-3 sm:gap-4 md:gap-1.5 sm:w-fit">
+                <div className="grid grid-cols-2 @md:grid-cols-3 @2xl:grid-cols-4 @5xl:grid-cols-5 gap-3 sm:gap-4 md:gap-1.5 w-fit mx-auto">
                     {skillsData.map((item, i) => (
                         <motion.div
                             custom={i}

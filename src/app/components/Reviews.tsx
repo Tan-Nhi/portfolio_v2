@@ -87,7 +87,7 @@ const ReviewsPage = () => {
                                     italic
                                 "
                             >
-                                {review.comment}
+                                &ldquo;{review.comment}&rdquo;
                             </blockquote>
                         </motion.div>
                     </AnimatePresence>

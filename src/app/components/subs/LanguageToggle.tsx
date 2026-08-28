@@ -16,7 +16,7 @@ const LanguageToggle = () => {
             border border-yellow-500/40 px-3 h-9 text-xs font-semibold tracking-wider
             text-yellow-600 hover:bg-yellow-500 hover:text-white transition-colors shadow-sm"
         >
-            {mounted ? (language === 'en' ? 'EN' : 'VI') : 'VI'}
+            {mounted ? (language === 'vi' ? 'VI' : 'EN') : 'EN'}
         </button>
     );
 };

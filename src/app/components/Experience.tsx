@@ -83,9 +83,9 @@ const ExperiencePage = () => {
                                 </span>
                             </motion.div>
                             <div
-                                className={`w-14 absolute top-20 left-1/2 -translate-x-1/2 border border-gray-300 rounded-full aspect-square grid place-items-center text-red-400 font-light -translate-y-1/2 z-10 bg-white ${i % 2 === 0
-                                    ? 'min-[1150px]:left-full min-[1150px]:-translate-x-1/2'
-                                    : 'min-[1150px]:right-full min-[1150px]:left-auto min-[1150px]:translate-x-1/2'
+                                className={`w-14 absolute -top-10 min-[1150px]:top-20 left-1/2 -translate-x-1/2 border border-gray-300 rounded-full aspect-square grid place-items-center text-red-400 font-light -translate-y-1/2 z-30 bg-white dark:bg-zinc-800 ${i % 2 === 0
+                                    ? 'min-[1150px]:left-[calc(100%+24px)] min-[1150px]:translate-x-0'
+                                    : 'min-[1150px]:right-[calc(100%+24px)] min-[1150px]:left-auto min-[1150px]:translate-x-0'
                                     }`}
                             >
                                 {date - items.length + i + 1}
